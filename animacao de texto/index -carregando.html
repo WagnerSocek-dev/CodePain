@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Titulo</title>  
+  <!-- <link href="css/my-style.css" rel="stylesheet"> -->
+
+</head>
+
+<body id="">
+
+    <!-- <h1>teste css</h1> -->
+  <!-- html -->
+
+  <h1 data-text="It's loading…">It's loading…</h1>
+    
+
+
+
+<!-- html -->
+
+    <script>// js interno aqui      
+    
+    </script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
+
+<style>
+  body {
+    background: #3498db;
+    font-family: sans-serif;
+}
+h1 {
+    position: relative;
+    color: rgba(0, 0, 0, .3);
+    font-size: 5em
+}
+h1:before {
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    max-width: 7em;
+    white-space: nowrap;
+    color: #fff;
+    animation: loading 8s linear;
+}
+@keyframes loading {
+    0% {
+        max-width: 0;
+    }
+}
+</style>
+
