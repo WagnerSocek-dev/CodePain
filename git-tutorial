@@ -1,0 +1,9 @@
+configurar usuario:
+git config user.name "WagnerSocek-dev"
+
+clonar - enviar:
+criar nova pasta
+git clone https://github.com/WagnerSocek-dev/CodePain.git
+git add * ou .
+git commit -m "abacate"
+git push
